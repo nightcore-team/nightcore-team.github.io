@@ -1,6 +1,71 @@
 site_name: Nightcore user documentation
+repo_url: https://github.com/nightcore-team/nightcore-docs
+repo_name: nightcore-docs
+
 nav:
-  - Кланы:
-    - Общее: common/clans.md
-    - Команды: commands/clans.md
-    - Компоненты: components/clans.md
+  - Главная: index.md
+  - Документация:
+    - Системы:
+      - Кланы:
+        - Общее: common/clans.md
+        - Команды: commands/clans.md
+        - Компоненты: components/clans.md
+      - Модерация:
+        - Общее: common/moderation.md
+        - Команды: commands/moderation.md
+        - Компоненты: components/moderation.md
+
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/images/nightcore-avatar.jpg
+  favicon: assets/images/nightcore-avatar.jpg
+  features:
+    - navigation.footer
+    - navigation.tabs
+    - content.code.copy
+    - content.code.select
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.tracking
+    - toc.follow
+
+  palette:
+  - media: "(prefers-color-scheme)"
+    toggle:
+      icon: material/brightness-auto
+      name: Switch to light mode
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: teal
+    accent: purple
+    toggle:
+      icon: material/weather-sunny
+      name: Switch to dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    primary: black
+    accent: lime
+    toggle:
+      icon: material/weather-night
+      name: Switch to system preference
+
+
+extra_css:
+  - assets/css/extra.css
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
