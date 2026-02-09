@@ -17,7 +17,7 @@
     /* Accents */
     --nc-accent-blue: #5F7DC5;
     --nc-accent-soft: #AAB6EE;
-    --nc-accent-violet: #BFA6FF;
+    --nc-accent-violet: #8a6eca;
     --nc-accent-pink: #FF9ACB;
 }
 
@@ -45,11 +45,7 @@
    ========================= */
 
 .md-container {
-    background:
-        radial-gradient(circle at top,
-            #20283C 0%,
-            #0F1120 40%,
-            #070B10 100%);
+    background: #1d273f;
 }
 
 /* =========================
@@ -68,6 +64,22 @@
 
 .md-tabs__link--active {
     color: var(--nc-accent-violet);
+}
+
+.md-nav__title {
+    background: none !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.md-nav__link {
+    background: none !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 /* =========================
