@@ -4,6 +4,7 @@ repo_name: nightcore-docs
 
 nav:
   - Документация:
+    - Информация: index.md
     - Системы:
       - Кланы:
         - Общее: common/clans.md
