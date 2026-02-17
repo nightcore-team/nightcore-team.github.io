@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../../components/proposals/">
+        <link rel="prev" href="../../components/role_requests/">
       
-      
-        <link rel="next" href="../../commands/role_requests/">
       
       
         
@@ -1300,8 +1298,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1314,11 +1310,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_9" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_9" >
         
           
           <label class="md-nav__link" for="__nav_1_2_9" id="__nav_1_2_9_label" tabindex="0">
@@ -1339,7 +1335,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_9_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_1_2_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1354,19 +1350,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../role_requests/" class="md-nav__link">
         
   
   
@@ -1382,7 +1369,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -1456,8 +1442,10 @@
                 
   
   
+    
   
   
+  
     
     
     
@@ -1468,11 +1456,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2_10" checked>
         
           
           <label class="md-nav__link" for="__nav_1_2_10" id="__nav_1_2_10_label" tabindex="0">
@@ -1493,7 +1481,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_10_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_10_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1_2_10">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1508,10 +1496,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../private_rooms/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1527,6 +1524,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1593,20 +1591,17 @@
   
 
 
-<h1 id="_1">Общее про систему выдачи ролей</h1>
+<h1 id="_1">Общее про систему приватных комнат</h1>
 <hr />
 <div class="admonition info">
-<p class="admonition-title">Параметры системы</p>
-<ul>
-<li><code>role_request_channel</code> - канал, в который будет приходить запрос на выдачу роли</li>
-<li><code>organizational_roles</code> - организационные роли</li>
-<li><code>illegal_roles</code> - роли нелегальных организаций</li>
-</ul>
-<p>При вводе нелегальных организаций в компоненте <a href="../../components/role_requests/#sendrolerequestview">SendRoleRequestView</a> добавляется еще один селектор</p>
+<p class="admonition-title">Использование</p>
+<p>Когда вы заходите в настроенный голосовой канал, бот перекидывает вас в созданный канал (или в текущий, если ваша приватная комната уже существует) и выдает права на изменение канала и управление участниками в этом канале.</p>
+<p>При выходе создателя из своей из комнаты она удаляется</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Настройка</p>
-<p>Все параметры настраиваются с помощью команды <code>/config other setup</code> <a href="../../commands/config/#config-other-setup">здесь</a></p>
+<p>Для настройки системы нужен только один параметр - <code>create_private_channel</code>, который настраивается <a href="../../commands/config/#config-private_channels">здесь</a><br />
+Логирование настраивается <a href="../../commands/config/#config-logging">здесь</a>, параметр <code>private_rooms</code></p>
 </div>
 
 
@@ -1637,7 +1632,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../components/proposals/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Компоненты">
+          <a href="../../components/role_requests/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Компоненты">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1652,22 +1647,6 @@
             </div>
           </a>
         
-        
-          
-          <a href="../../commands/role_requests/" class="md-footer__link md-footer__link--next" aria-label="Next: Команды">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              <div class="md-ellipsis">
-                Команды
-              </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
-            </div>
-          </a>
         
       </nav>
     
