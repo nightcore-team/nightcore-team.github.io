@@ -35,6 +35,8 @@ nav:
         - Компоненты: components/role_requests.md
       - Приватные комнаты:
         - Общее: common/private_rooms.md
+      - Билдер компонентов:
+        - Команды: commands/compbuilder.md
 
 theme:
   name: material
