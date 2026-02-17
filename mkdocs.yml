@@ -33,6 +33,8 @@ nav:
         - Общее: common/role_requests.md
         - Команды: commands/role_requests.md
         - Компоненты: components/role_requests.md
+      - Приватные комнаты:
+        - Общее: common/private_rooms.md
 
 theme:
   name: material
